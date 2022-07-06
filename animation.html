@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(64, 115, 64);
+            position: relative;
+            animation-name: example;
+            animation-duration:4s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes example {
+            0%   {background-color: rgb(64, 115, 64); left: 0px; top: 0px;}
+            25%  {background-color: rgb(245, 50, 50); left: 400px; top: 0px;}
+            50%  { background-color: rgb(23, 23, 120); left: 400px; top: 400px;}
+            75%  {background-color: rgb(242, 242, 38); left: 0px; top: 400px;}
+            100% {background-color: rgb(64, 115, 64); left: 0px; top: 0px;}
+
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Animation</h2>
+    <div></div>
+    
+</body>
+</html>
