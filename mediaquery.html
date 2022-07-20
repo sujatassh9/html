@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box {
+            background-color: black;
+            color: antiquewhite;
+            text-align: center;
+            display: none;
+            font-size: 30px;
+        }
+
+        @media (max-width:300px) {
+            #item1 {
+                display: block;
+                background-color: blue;
+                color: rgb(248, 95, 56);
+                border:2px solid black;
+            }
+        }
+
+        @media (min-width:300px) and (max-width:550px){
+            #item2{
+                display:block;
+                background-color:tomato;
+                color:rgb(6, 49, 97);
+                border:2px solid black;
+            }
+        }
+        @media (min-width:550px) and (max-width:700px){
+            #item3{
+                display:block;
+                background-color: burlywood;
+                color:aqua;
+                border: 2px solid black;
+            }
+        }
+
+        @media (min-width:700px){
+            #item4{
+                display:block;
+                background-color: darksalmon;
+                color: rgb(110, 220, 20);
+                border: 2px solid black;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    
+        <div id="item1" class="box">HELLO, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur itaque ea placeat quam quas, numquam aliquid sequi pariatur, animi quaerat dignissimos voluptas laboriosam? Labore eligendi architecto quasi iusto quae officia.</div>
+        <div id="item2" class="box">HELLO, Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident molestiae iste rem nulla? At eaque assumenda iusto nam quo perferendis non quae consequatur cumque fugiat, ea natus odit quidem id.</div>
+        <div id="item3" class="box">HELLO, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt doloremque dolor ratione dolorem iste temporibus quod perferendis at sapiente cum. Provident possimus molestias, quos sequi sit temporibus soluta praesentium aliquam!</div>
+        <div id="item4" class="box">HELLO, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illum deserunt maxime placeat doloremque? Doloremque quasi distinctio ut ad pariatur accusamus omnis soluta quaerat quo ratione placeat ducimus, nulla veritatis?</div>
+    
+</body>
+
+</html>
